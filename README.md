@@ -2,6 +2,8 @@
 
 Build your langgraphs declaratively instead of imperatively (e.g. from a JSON file)
 
+![](./langgraph-builder.png)
+
 ---
 
 The relevant code is in `langgraph_from_json.py`
@@ -17,6 +19,7 @@ The relevant code is in `langgraph_from_json.py`
 Work in progress, feel free to PR and contribute
 
 ---
+
 ### Resources
 
 https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.graph.Graph.html#langchain_core.runnables.graph.Graph.to_json
