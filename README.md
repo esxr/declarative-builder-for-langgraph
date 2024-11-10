@@ -22,7 +22,7 @@ Work in progress, feel free to PR and contribute
 
 ### Resources
 
-https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.graph.Graph.html#langchain_core.runnables.graph.Graph.to_json
-https://python.langchain.com/docs/how_to/inspect/
-https://github.com/langchain-ai/langgraph/discussions/1651
-https://github.com/langchain-ai/langgraph-example
+- https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.graph.Graph.html#langchain_core.runnables.graph.Graph.to_json
+- https://python.langchain.com/docs/how_to/inspect/
+- https://github.com/langchain-ai/langgraph/discussions/1651
+- https://github.com/langchain-ai/langgraph-example
