@@ -1,0 +1,16 @@
+{
+  "name": "langgraph-builder",
+  "version": "1.0.0",
+  "main": "sample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "^0.3.17",
+    "@langchain/langgraph": "^0.2.20"
+  }
+}

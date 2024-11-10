@@ -1,0 +1,65 @@
+{
+    "nodes": [
+        {
+            "id": "__start__",
+            "type": "schema",
+            "data": "__start__"
+        },
+        {
+            "id": "agent",
+            "type": "runnable",
+            "data": {
+                "id": [
+                    "langgraph",
+                    "utils",
+                    "runnable",
+                    "RunnableCallable"
+                ],
+                "name": "agent",
+                "function": "call_model"
+            }
+        },
+        {
+            "id": "action",
+            "type": "runnable",
+            "data": {
+                "id": [
+                    "langgraph",
+                    "prebuilt",
+                    "tool_node",
+                    "ToolNode"
+                ],
+                "name": "action",
+                "function": "tool_node"
+            }
+        },
+        {
+            "id": "__end__",
+            "type": "schema",
+            "data": "__end__"
+        }
+    ],
+    "edges": [
+        {
+            "source": "__start__",
+            "target": "agent"
+        },
+        {
+            "source": "action",
+            "target": "agent"
+        },
+        {
+            "source": "agent",
+            "target": "action",
+            "data": "continue",
+            "conditional": "True",
+            "function": "should_continue"
+        },
+        {
+            "source": "agent",
+            "target": "__end__",
+            "data": "end",
+            "conditional": "True"
+        }
+    ]
+}
